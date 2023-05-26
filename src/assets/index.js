@@ -38,6 +38,7 @@ import reactOnImg from "./project/rectangleOnImg.png";
 import gameHub from "./project/gameHub.png";
 import geoContact from "./project/geoContact.png";
 import broodmaker from "./project/broodmaker.png";
+import canastaCPP from "./project/canastaCPP.png";
 
 export {
 	logo,
@@ -77,4 +78,5 @@ export {
 	gameHub,
 	geoContact,
 	broodmaker,
+	canastaCPP,
 };

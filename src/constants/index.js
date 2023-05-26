@@ -9,7 +9,7 @@ import {
 	html,
 	css,
 	scss,
-	chakaui,
+	chakraui,
 	reactjs,
 	tailwind,
 	threejs,
@@ -104,7 +104,7 @@ const technologies = [
 	},
 	{
 		name: "Chakra UI",
-		icon: chakaui,
+		icon: chakraui,
 	},
 	{
 		name: "Node JS",
