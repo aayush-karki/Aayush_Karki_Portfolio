@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import { SectionWraper } from "../hoc";
+
 const ServiceCard = ({ index, title, icon }) => {
 	return (
 		<Tilt className="xs:w-[250px] w-full">
@@ -54,7 +56,7 @@ const About = () => {
 				coding and learning every day.
 			</motion.p>
 
-			<div className="mt-20 flex flex-wrap gap-10">
+			<div className="mt-20 flex flex-wrap gap-10 justify-between">
 				{services.map((service, index) => (
 					<ServiceCard
 						key={service.title}
@@ -67,4 +69,12 @@ const About = () => {
 	);
 };
 
-export default About;
+const AboutWapper = () => {
+	return (
+		<SectionWraper idName="about">
+			<About />
+		</SectionWraper>
+	);
+};
+
+export default AboutWapper;
