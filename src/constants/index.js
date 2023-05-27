@@ -2,6 +2,7 @@ import {
 	mobile,
 	backend,
 	web,
+	creator,
 	cplusspluss,
 	csharp,
 	javascript,
@@ -51,6 +52,10 @@ export const navLinks = [
 ];
 
 const services = [
+	{
+		title: "Software Developer",
+		icon: creator,
+	},
 	{
 		title: "Web Developer",
 		icon: web,
