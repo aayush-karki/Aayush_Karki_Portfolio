@@ -1,3 +1,4 @@
+import placeholderImg from "./placeholderImg.png";
 import logo from "./logo.png";
 import backend from "./backend.png";
 import mobile from "./mobile.png";
@@ -43,6 +44,7 @@ import broodmaker from "./project/broodmaker.png";
 import canastaCPP from "./project/canastaCPP.png";
 
 export {
+	placeholderImg,
 	logo,
 	backend,
 	mobile,

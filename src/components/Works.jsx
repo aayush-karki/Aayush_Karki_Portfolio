@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 import { SectionWraper } from "../hoc";
 
 import { projects } from "../constants";
-import { styles } from "../styles";
-import { github, demo } from "../assets";
-import { fadeIn, textVariant } from "../utils/motion";
+import { placeholderImg, github, demo } from "../assets";
+import { fadeIn } from "../utils/motion";
 import SeactionHeading from "./seactionHeading";
 
 // Project Link Icon component that appears on top right of the project card
@@ -40,6 +39,7 @@ const ProjectCard = ({
 	source_code_link,
 	demo_link,
 }) => {
+	console.log(`${name} image: ${image ?? placeholderImg}`);
 	return (
 		<motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
 			<Tilt
@@ -50,9 +50,10 @@ const ProjectCard = ({
 				}}
 				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
 			>
+				{/* project image */}
 				<div className="relative w-full h-[230px]">
 					<img
-						src={image}
+						src={image ?? placeholderImg}
 						alt={name}
 						className="w-full h-full object-cover rounded-2xl"
 					/>
@@ -67,6 +68,7 @@ const ProjectCard = ({
 					</div>
 				</div>
 
+				{/* project name and description */}
 				<div className="mt-5">
 					<h3 className="text-white font-bold text-[24px]">{name}</h3>
 					<p className="mt-2 text-secondary text-[14px]">
@@ -74,6 +76,7 @@ const ProjectCard = ({
 					</p>
 				</div>
 
+				{/* project tags */}
 				<div className="mt-4 flex flex-wrap gap-2">
 					{tags.map((tag, index) => (
 						<p
@@ -94,6 +97,7 @@ const Works = () => {
 		<>
 			<SeactionHeading subText="My Work" sectionHeadText="Project" />
 
+			{/* section description */}
 			<div className="w-full flex flex-col">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
@@ -107,6 +111,7 @@ const Works = () => {
 					projects effectively.
 				</motion.p>
 
+				{/* show all project cards */}
 				<div className="mt-20 flex flex-wrap gap-7 justify-center">
 					{projects.map((project, index) => (
 						<ProjectCard

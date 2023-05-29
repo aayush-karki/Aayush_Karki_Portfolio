@@ -351,7 +351,6 @@ const projects = [
 				color: "blue-text-gradient",
 			},
 		],
-		image: "",
 		source_code_link:
 			"https://github.com/aayush-karki/distributed-Programming",
 	},
