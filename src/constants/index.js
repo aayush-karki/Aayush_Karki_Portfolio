@@ -189,6 +189,13 @@ const experiences = [
 	},
 ];
 
+// Project_Schema
+// name: string
+// description: string
+// tags: {name: string, color: string}[]
+// image: img
+// source_code_link: link
+// live_demo_link? : link
 const projects = [
 	{
 		name: "BroodMaker",
