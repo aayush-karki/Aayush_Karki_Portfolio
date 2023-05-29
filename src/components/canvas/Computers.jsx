@@ -1,8 +1,9 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import useMobile from "../../hooks/useMobile";
 
 // component to render the computer model
 const Computers = ({ isMobile }) => {
@@ -32,22 +33,7 @@ const Computers = ({ isMobile }) => {
 
 // canvas where the computer model is rendered
 const ComputersCanvas = () => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const mediaQuery = window.matchMedia("(max-width: 640px)");
-
-		setIsMobile(mediaQuery.matches);
-
-		const handleMediaQueryChange = (e) => {
-			setIsMobile(e.matches);
-		};
-
-		mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-		return () =>
-			mediaQuery.removeEventListener("change", handleMediaQueryChange);
-	}, []);
+	const { isMobile } = useMobile("640px");
 
 	return (
 		<div className="w-full h-4/6">
