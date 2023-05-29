@@ -195,7 +195,7 @@ const experiences = [
 // tags: {name: string, color: string}[]
 // image: img
 // source_code_link: link
-// live_demo_link? : link
+// demo_link? : link
 const projects = [
 	{
 		name: "BroodMaker",
@@ -309,7 +309,7 @@ const projects = [
 			"An WPF application that allows the users to create and manipulate rectangles over an image. It allows user to load images, create rectangles over the image, drag the created rectangles, change color of the rectangle, delete the created rectangles, and save the image.",
 		tags: [
 			{
-				name: "C#",
+				name: "Csharp",
 				color: "blue-text-gradient",
 			},
 			{
