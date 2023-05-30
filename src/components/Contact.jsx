@@ -8,15 +8,56 @@ import { slideIn } from "../utils/motion";
 import { SectionWraper } from "../hoc";
 import SeactionHeading from "./seactionHeading";
 
+// temp template_p3z5kpo
+// service_8gal7lw
+// Qo0xgwZDT5sWft6sc
+
 const Contact = () => {
 	const formRef = useRef(null);
 	const [form, setForm] = useState({ name: "", email: "", message: "" });
 
 	const [loading, setLoading] = useState(false);
 
-	const handleChange = (e) => {};
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setForm({ ...form, [name]: value });
+	};
 
-	const handleSubmit = (e) => {};
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setLoading(true);
+
+		emailjs
+			.send(
+				"service_8gal7lw",
+				"template_p3z5kpo",
+				{
+					from_name: form.name,
+					to_name: "Aayush",
+					from_email: form.email,
+					to_email: "akarki@ramapo.edu",
+					message: form.message,
+				},
+				"Qo0xgwZDT5sWft6sc"
+			)
+			.then((res) => {
+				setLoading(false);
+				alert(
+					"Thank you for your message. I will get back to you soon."
+				);
+				setForm({
+					name: "",
+					email: "",
+					message: "",
+				});
+			})
+			.catch((err) => {
+				setLoading(false);
+				console.log(error);
+
+				alert("Something went wrong. Please try again.");
+			});
+	};
 
 	return (
 		<div className="xl:mt-12 flex flex-col-reverse xl:flex-row gap-10 overflow-hidden">
