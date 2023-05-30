@@ -3,7 +3,7 @@ import { technologies } from "../constants";
 import { BallCanvas } from "./canvas";
 import { SectionWraper } from "../hoc";
 import ScrollingBtn from "./ScrollingBtn";
-import SeactionHeading from "./seactionHeading";
+import SeactionHeading from "./SeactionHeading";
 
 const Tech = () => {
 	// array with all the icons

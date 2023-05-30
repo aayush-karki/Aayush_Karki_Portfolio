@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { services } from "../constants";
 import { fadeIn } from "../utils/motion";
 
-import SeactionHeading from "./seactionHeading";
+import SeactionHeading from "./SeactionHeading";
 import { SectionWraper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {

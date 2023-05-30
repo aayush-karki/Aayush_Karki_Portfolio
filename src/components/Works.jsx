@@ -6,7 +6,7 @@ import { SectionWraper } from "../hoc";
 import { projects } from "../constants";
 import { placeholderImg, github, demo } from "../assets";
 import { fadeIn } from "../utils/motion";
-import SeactionHeading from "./seactionHeading";
+import SeactionHeading from "./SeactionHeading";
 import useMobile from "../hooks/useMobile";
 
 // Project Link Icon component that appears on top right of the project card

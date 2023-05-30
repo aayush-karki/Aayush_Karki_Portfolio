@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import { SectionWraper } from "../hoc";
-import SeactionHeading from "./seactionHeading";
+import SeactionHeading from "./SeactionHeading";
 
 const Contact = () => {
 	const formRef = useRef(null);

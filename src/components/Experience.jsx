@@ -7,7 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "../constants";
 
-import SeactionHeading from "./seactionHeading";
+import SeactionHeading from "./SeactionHeading";
 import { SectionWraper } from "../hoc";
 
 const ExperienceCard = ({ experience }) => (
