@@ -7,6 +7,7 @@ import { projects } from "../constants";
 import { placeholderImg, github, demo } from "../assets";
 import { fadeIn } from "../utils/motion";
 import SeactionHeading from "./seactionHeading";
+import useMobile from "../hooks/useMobile";
 
 // Project Link Icon component that appears on top right of the project card
 // takes in link and type of link as props. type can be github or demo
@@ -39,7 +40,8 @@ const ProjectCard = ({
 	source_code_link,
 	demo_link,
 }) => {
-	console.log(`${name} image: ${image ?? placeholderImg}`);
+	const { isMobile } = useMobile("875px");
+
 	return (
 		<motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
 			<Tilt
@@ -48,12 +50,15 @@ const ProjectCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+				className="bg-tertiary p-5 rounded-2xl w-[360px]"
 			>
 				{/* project image */}
+
 				<div className="relative w-full h-[230px]">
 					<img
-						src={image ?? placeholderImg}
+						src={
+							!isMobile ? image ?? placeholderImg : placeholderImg
+						}
 						alt={name}
 						className="w-full h-full object-cover rounded-2xl"
 					/>
@@ -93,6 +98,8 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+	console.log(`work`);
+
 	return (
 		<>
 			<SeactionHeading subText="My Work" sectionHeadText="Project" />

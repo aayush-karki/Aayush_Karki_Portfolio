@@ -37,11 +37,17 @@ import jenkins from "./tech/jenkins.png";
 
 import dotdashMeredith from "./company/dotdashMeredith.svg";
 
-import reactOnImg from "./project/rectangleOnImg.png";
-import gameHub from "./project/gameHub.png";
-import geoContact from "./project/geoContact.png";
-import broodmaker from "./project/broodmaker.png";
-import canastaCPP from "./project/canastaCPP.png";
+// import reactOnImg from "./project/rectangleOnImg.png";
+// import gameHub from "./project/gameHub.png";
+// import geoContact from "./project/geoContact.png";
+// import broodmaker from "./project/broodmaker.png";
+// import canastaCPP from "./project/canastaCPP.png";
+
+import reactOnImg from "./project/rectangleOnImg_scaled.png";
+import gameHub from "./project/gameHub_scaled.png";
+import geoContact from "./project/geoContact_scaled.png";
+import broodmaker from "./project/broodmaker_scaled.png";
+import canastaCPP from "./project/canastaCPP_scaled.png";
 
 export {
 	placeholderImg,
