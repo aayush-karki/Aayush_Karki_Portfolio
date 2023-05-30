@@ -19,6 +19,7 @@ const Contact = () => {
 		setForm({ ...form, [name]: value });
 	};
 
+	// uses emailjs to send email
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
