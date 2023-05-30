@@ -34,7 +34,7 @@ const Hero = () => {
 			<ComputersCanvas className="mt-4" />
 
 			{/* scrolling animation button */}
-			<ScrollingBtn idName="#about" top={"-135px"} />
+			<ScrollingBtn idName="#about" position={"absolute  bottom-10"} />
 		</section>
 	);
 };

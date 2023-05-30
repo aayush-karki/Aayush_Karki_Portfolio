@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 
-const ScrollingBtn = ({ idName, top }) => {
+const ScrollingBtn = ({ idName, position }) => {
 	return (
-		<div
-			className={`relative top-[${top}] w-full flex justify-center items-center`}
-		>
+		<div className={`${position}  w-full flex justify-center items-center`}>
 			<a href={idName}>
 				<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
 					<motion.div

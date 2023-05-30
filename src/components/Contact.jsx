@@ -8,10 +8,6 @@ import { slideIn } from "../utils/motion";
 import { SectionWraper } from "../hoc";
 import SeactionHeading from "./seactionHeading";
 
-// temp template_p3z5kpo
-// service_8gal7lw
-// Qo0xgwZDT5sWft6sc
-
 const Contact = () => {
 	const formRef = useRef(null);
 	const [form, setForm] = useState({ name: "", email: "", message: "" });
