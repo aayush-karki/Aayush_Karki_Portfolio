@@ -181,10 +181,10 @@ const experiences = [
 		iconBg: "#383E56",
 		date: "June 2022 - December 2022",
 		points: [
-			"Developed visually appealing templates and components utilizing JavaScript, XML and SCSS within a custom, component-based framework.",
+			"Developed visually-appealing templates and components utilizing JavaScript, XML, and SCSS within a custom, component-based framework.",
 			"Created responsive components for the 'Bubbles' digital issue, ensuring seamless performance and cross-browser compatibility. These components were viewed by over 1,000,000 individuals within the first month of release.",
-			"Revamped recipe printing system to enhance performance, readability, and significantly reduce load times by over 50%.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products while reglarly using tools tools such as Squadron, Git/Bitbucket, Jenkins, Jira, Confluence, and Kibana.",
+			"Revamped recipe printing system to enhance performance, and readability, while significantly reducing load times by over 23%.",
+			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products while regularly using tools such as Squadron, Git/Bitbucket, Jenkins, Jira, Confluence, and Kibana.",
 		],
 	},
 ];
