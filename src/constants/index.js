@@ -212,7 +212,7 @@ const projects = [
 	{
 		name: "BroodMaker",
 		description:
-			"BroodMaker, and BroodUI is developed using C++ and SFML for graphics. The BroodMaker is application that uses the BroodUI library for all the UI elements and user interaction with them. The Brood UI library uses the Immediate-Mode Graphical User Interface API principle as opposed to the Retained-mode GUI.",
+			"BroodMaker and BroodUI are developed using C++ and SFML for graphics. The BroodMaker is an application that uses the BroodUI library for all the UI elements and user interaction with them. The Brood UI library uses the Immediate-Mode Graphical User Interface API principle as opposed to the Retained-mode GUI.",
 		tags: [
 			{
 				name: "C++",
@@ -237,7 +237,7 @@ const projects = [
 	{
 		name: "Game Hub",
 		description:
-			"Web application made using ReactJS, and ChakraUI that enables users to search and sort games by genre, platform, name, popularity, rating, and release date. It uses RawgAPI to to fetch up-to-date game information.It was deployed using vercel",
+			"A web application made using ReactJS, and ChakraUI that enables users to search and sort games by genre, platform, name, popularity, rating, and release date. It uses RawgAPI to fetch up-to-date game information. It was deployed using Vercel.",
 		tags: [
 			{
 				name: "react",
@@ -259,7 +259,7 @@ const projects = [
 	{
 		name: "Canasta Card Game (C++)",
 		description:
-			"Console based implementation of the canasta card game made in c++",
+			"Console-based implementation of the Canasta card game made in C++.",
 		tags: [
 			{
 				name: "c++",
@@ -281,7 +281,7 @@ const projects = [
 	{
 		name: "Geo Contact",
 		description:
-			"A geo-coding web application with maps. It allows users to register contacts and identify the location on the map. It uses MVC pattern. Like wise it uses MapBox API as geocoding API and MongoDB as database.",
+			"A geocoding web application with maps. It allows users to register contacts and identify the location on the map. It uses the MVC pattern. Likewise, it uses MapBox API as geocoding API and MongoDB as a database.",
 		tags: [
 			{
 				name: "express",
@@ -318,7 +318,7 @@ const projects = [
 	{
 		name: "Rectangles On Image",
 		description:
-			"An WPF application that allows the users to create and manipulate rectangles over an image. It allows user to load images, create rectangles over the image, drag the created rectangles, change color of the rectangle, delete the created rectangles, and save the image.",
+			"A WPF application that allows the users to create and manipulate rectangles over an image. It allows the user to load images, create rectangles over the image, drag the created rectangles, change the color of the rectangle, delete the created rectangles, and save the image.",
 		tags: [
 			{
 				name: "Csharp",
@@ -340,7 +340,7 @@ const projects = [
 	{
 		name: "Distributed Programming",
 		description:
-			"A collection of programming problems solved in python and scala using hadoop and spark libraries.",
+			"A collection of programming problems solved in Python and Scala using Hadoop and Spark libraries.",
 		tags: [
 			{
 				name: "python",
