@@ -36,6 +36,7 @@ import jira from "./tech/jira.svg";
 import jenkins from "./tech/jenkins.png";
 
 import dotdashMeredith from "./company/dotdashMeredith.svg";
+import ramapoCollege from "./company/ramapoCollege.png";
 
 // import reactOnImg from "./project/rectangleOnImg.png";
 // import gameHub from "./project/gameHub.png";
@@ -86,6 +87,7 @@ export {
 	jira,
 	jenkins,
 	dotdashMeredith,
+	ramapoCollege,
 	reactOnImg,
 	gameHub,
 	geoContact,

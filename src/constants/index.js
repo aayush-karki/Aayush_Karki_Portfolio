@@ -29,6 +29,7 @@ import {
 	jenkins,
 	figma,
 	dotdashMeredith,
+	ramapoCollege,
 	reactOnImg,
 	gameHub,
 	geoContact,
@@ -185,6 +186,17 @@ const experiences = [
 			"Created responsive components for the 'Bubbles' digital issue, ensuring seamless performance and cross-browser compatibility. These components were viewed by over 1,000,000 individuals within the first month of release.",
 			"Revamped recipe printing system to enhance performance, and readability, while significantly reducing load times by over 23%.",
 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products while regularly using tools such as Squadron, Git/Bitbucket, Jenkins, Jira, Confluence, and Kibana.",
+		],
+	},
+	{
+		title: "Bachelor of Science in Computer Science",
+		company_name: "Ramapo College of New Jersey",
+		icon: ramapoCollege,
+		iconBg: "#383E56",
+		date: "September 2019 - May 2023",
+		points: [
+			"Awards: Presidential Scholarship Recipient, Research Honors, Dean’s Merit List",
+			"Coursework: Data Structures and Algorithm, Object-Oriented Programming, Operating Systems, Software Design, UNIX Environment, .NET Framework, Web Development, Linear Algebra, and Discrete Structures",
 		],
 	},
 ];
