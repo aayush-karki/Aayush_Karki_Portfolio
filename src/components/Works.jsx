@@ -54,24 +54,24 @@ const ProjectCard = ({
 			>
 				{/* project image */}
 
-				<div className="relative w-full h-[230px]">
-					<img
-						src={
-							!isMobile ? image ?? placeholderImg : placeholderImg
-						}
-						alt={name}
-						className="w-full h-full object-cover rounded-2xl"
-					/>
-					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-						{demo_link && (
-							<ProjectLinkIcon link={demo_link} type="demo" />
-						)}
-						<ProjectLinkIcon
-							link={source_code_link}
-							type="github"
+				{!isMobile && (
+					<div className="relative w-full h-[230px]">
+						<img
+							src={image ?? placeholderImg}
+							alt={name}
+							className="w-full h-full object-cover rounded-2xl"
 						/>
+						<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+							{demo_link && (
+								<ProjectLinkIcon link={demo_link} type="demo" />
+							)}
+							<ProjectLinkIcon
+								link={source_code_link}
+								type="github"
+							/>
+						</div>
 					</div>
-				</div>
+				)}
 
 				{/* project name and description */}
 				<div className="mt-5">
