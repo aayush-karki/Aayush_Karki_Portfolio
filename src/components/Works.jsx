@@ -4,25 +4,20 @@ import { motion } from "framer-motion";
 import { SectionWraper } from "../hoc";
 
 import { projects } from "../constants";
-import { placeholderImg, github, demo } from "../assets";
+import { placeholderImg } from "../assets";
+import { GithubIcon, LiveLinkIcon } from "./Icons";
 import { fadeIn } from "../utils/motion";
 import SeactionHeading from "./SeactionHeading";
 import useMobile from "../hooks/useMobile";
 
 // Project Link Icon component that appears on top right of the project card
 // takes in link and type of link as props. type can be github or demo
-const ProjectLinkIcon = ({ link, type }) => (
-	<div
-		onClick={() => window.open(link, "_blank")}
-		className="black-gradient w-10 h-10 ml-1 rounded-full flex justify-center items-center cursor-pointer"
-	>
-		<img
-			src={type == "github" ? github : demo}
-			alt={type == "github" ? "github link" : "live demo link"}
-			className="w-1/2 h-1/2 object-contain"
-		/>
-	</div>
-);
+const ProjectLinkIcon = ({ link, type }) =>
+	type == "github" ? (
+		<GithubIcon link={link} />
+	) : (
+		<LiveLinkIcon link={link} />
+	);
 
 // Project_Schema
 // name: string
