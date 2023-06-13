@@ -47,7 +47,22 @@ const ProjectCard = ({
 				}}
 				className="bg-tertiary p-5 rounded-2xl w-[360px]"
 			>
-				{/* project image */}
+				{/* link icons if mobile*/}
+				{isMobile && (
+					<div className="relative w-full h-[52px]">
+						<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+							{demo_link && (
+								<ProjectLinkIcon link={demo_link} type="demo" />
+							)}
+							<ProjectLinkIcon
+								link={source_code_link}
+								type="github"
+							/>
+						</div>
+					</div>
+				)}
+
+				{/* project image and link icon if not mobile*/}
 
 				{!isMobile && (
 					<div className="relative w-full h-[230px]">
