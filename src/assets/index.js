@@ -1,15 +1,11 @@
 import placeholderImg from "./placeholderImg.png";
 import logo from "./logo.png";
-
 import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import creator from "./creator.png";
-
 import github from "./github.png";
 import demo from "./demo.svg";
-import linkedIn from "./linkedIn.png";
-
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -42,6 +38,12 @@ import jenkins from "./tech/jenkins.png";
 import dotdashMeredith from "./company/dotdashMeredith.svg";
 import ramapoCollege from "./company/ramapoCollege.png";
 
+// import reactOnImg from "./project/rectangleOnImg.png";
+// import gameHub from "./project/gameHub.png";
+// import geoContact from "./project/geoContact.png";
+// import broodmaker from "./project/broodmaker.png";
+// import canastaCPP from "./project/canastaCPP.png";
+
 import reactOnImg from "./project/rectangleOnImg_scaled.png";
 import gameHub from "./project/gameHub_scaled.png";
 import geoContact from "./project/geoContact_scaled.png";
@@ -57,7 +59,6 @@ export {
 	creator,
 	github,
 	demo,
-	linkedIn,
 	menu,
 	close,
 	css,
